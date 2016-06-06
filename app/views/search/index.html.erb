@@ -1,12 +1,10 @@
 <% @stations.each do |station| %>
+
 <h5><%= station.station_name %></h5>
-<ul>
+
+<ul id="<%= station.station_name %>">
   <li><%= station.street_address %></li>
   <li><%= station.fuel_type_code %></li>
   <li><%= station.access_days_time %></li>
 </ul>
 <% end %>
-
-
-
-<!-- Name, Address, Fuel Types, Distance, and Access Times -->
