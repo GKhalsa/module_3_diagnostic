@@ -5,7 +5,7 @@ RSpec.describe "user can enter in a zip code" do
     visit "/"
     fill_in :q, with: "80203"
     click_on("Locate")
-    expect(current_page).to eq("/search?zip=80203")
+    expect(current_path).to eq("/search?zip=80203")
   end
 end
 
