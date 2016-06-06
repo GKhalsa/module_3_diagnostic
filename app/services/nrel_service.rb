@@ -1,13 +1,12 @@
 class NrailService
 
-
   def initialize
     @_connection = Faraday.new(url: "https://developer.nrel.gov/api/alt-fuel-stations/v1")
     @_connection.params["api_key"] = ENV['NRAIL_KEY']
   end
 
   def stations_by_zip(params)
-    
+   binding.pry
   end
 
   private
